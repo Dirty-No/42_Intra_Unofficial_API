@@ -22,5 +22,3 @@ curl $LINK \
     -H "Cookie: _ga=$COOKIE_GA; _intra_42_session_production=$COOKIE_SESSION; user.id=$COOKIE_USER_ID; locale=en; _gid=$COOKIE_GID"   \
     -H 'If-None-Match: W/"f6849efa7dddf5949c5f1e8c8083d6ff"'   --compressed 2> /dev/null | sed -n '/Users/,$p' | sed '/General/,$d' |  sed 's/<[^<>]*>//g' | sed 's/Users//g' | sed -r '/^\s*$/d'
 
-
-#'Cookie: _ga=***REMOVED***; _intra_42_session_production=***REMOVED***; user.id=***REMOVED***; locale=en; _gid=***REMOVED***'
