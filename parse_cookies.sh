@@ -2,7 +2,7 @@
 
 # THIS IS A TEST SCRIPT THAT ALLOWS YOU TO CHECK IF YOUR COOKIES ARE CORRECTLY PARSED
 
-# PARSE COOKIES USED FOR WEB REQUEST HEADER  -H 'Cookie: _ga=***REMOVED***; _intra_42_session_production=***REMOVED***; user.id=***REMOVED***; locale=en; _gid=***REMOVED***'   \
+# PARSE COOKIES USED FOR WEB REQUEST HEADER
 # ARG 1 = cookies.txt
 
 FILE=$(cat $1)
