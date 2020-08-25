@@ -34,7 +34,6 @@ INTRA_PAGE=$(curl "https://profile.intra.42.fr/users/$1" \
   -H 'Sec-Fetch-Mode: navigate' \
   -H 'Sec-Fetch-User: ?1' \
   -H 'Sec-Fetch-Dest: document' \
-  -H 'Referer: https://projects.intra.42.fr/projects/exam-rank-02' \
   -H 'Accept-Language: fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7' \
   -H "Cookie: _ga=$COOKIE_GA; _intra_42_session_production=$COOKIE_SESSION; user.id=$COOKIE_USER_ID; locale=en; _gid=$COOKIE_GID"   \
   -H 'If-None-Match: W/"6c68d52de37e30e80b4b827f6f3917a5"' \
@@ -54,7 +53,6 @@ PROJECT_PAGE=$(curl "$PROJECT_LINK" \
   -H 'Sec-Fetch-Mode: navigate' \
   -H 'Sec-Fetch-User: ?1' \
   -H 'Sec-Fetch-Dest: document' \
-  -H 'Referer: https://projects.intra.42.fr/projects/exam-rank-02' \
   -H 'Accept-Language: fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7' \
   -H "Cookie: _ga=$COOKIE_GA; _intra_42_session_production=$COOKIE_SESSION; user.id=$COOKIE_USER_ID; locale=en; _gid=$COOKIE_GID"   \
   -H 'If-None-Match: W/"6c68d52de37e30e80b4b827f6f3917a5"' \
