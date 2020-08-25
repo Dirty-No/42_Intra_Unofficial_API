@@ -21,6 +21,8 @@ COOKIE_GID=$(echo "$FILE" | grep "^.42.fr" | grep -o "_gid.*" | grep -o "GA.*" |
 COOKIE_USER_ID=$(echo "$FILE" | grep "^intra.42.fr" | grep -o "user.id.*" | sed 's/user.id//g' | tr -d "\n \t\r")
 COOKIE_SESSION=$(echo "$FILE" | grep "^.intra.42.fr" | grep -o "_intra_42_session_production.*" | sed 's/_intra_42_session_production//g' | tr -d "\n \t\r")
 
+# WE CAN'T GET THE PROJECT PAGE DIRECTLY WITH THE LOGIN AS THEY ARE LISTED BY TEAM ID
+# SO WE HAVE TO SCRAP THE PROJECT URL FROM THE USER PAGE AND THEN MAKE THE REQUEST
 
 INTRA_PAGE=$(curl "https://profile.intra.42.fr/users/$1" \
   -H 'Cache-Control: max-age=0' \
