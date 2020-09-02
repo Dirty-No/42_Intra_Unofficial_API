@@ -4,15 +4,10 @@
 
 #   THIS SCRIPT REQUIRES A FILE NAMED COOKIES.TXT THAT CONTAINS THE COOKIES REQUIRED FOR YOU TO LOG ON THE INTRA
 #
-#   ONE WAY TO GET THIS FILE IS USING THIS CHROME EXTENSION :
-#   https://chrome.google.com/webstore/detail/cookiestxt/njabckikapfpffapmjgojcnbfjonfjfg?hl=fr
+#   YOU NEED TO SIGN IN WITH sign_in.sh TO GET YOUR COOKIES
 #
 #   THIS SCRIPT WILL USE YOUR SESSION AND SENDS DIRECTLY THE REQUESTS FROM YOUR COMPUTER TO THE INTRA'S SERVERS
 #                                   !!! USE AT YOUR OWN RISK !!!
-
-FILE=$(cat cookies.txt)
-
-COOKIE_SESSION=$(echo "$FILE" | grep "^.intra.42.fr" | grep -o "_intra_42_session_production.*" | sed 's/_intra_42_session_production//g' | tr -d "\n \t\r")
 
 declare -a StringArray=("assembly" "order" "federation" "alliance")
 
