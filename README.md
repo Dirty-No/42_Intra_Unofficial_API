@@ -2,12 +2,15 @@
 # An curl client for 42's intra
 
 This client uses your cookies to make the requests to the intranet, so use at your own risk, you're the only person responsible for what you do with it.
+
 This client is not limited by any ratelimit of the intra's API as it simply scrapes it's way in.
+
 This client is based on curl.
 
 
 
 To make any of the scripts work you need to have a file named "cookies.txt", containing the cookies needed to log on the intra, next to the scripts.
+
 You can sign in using your login and password using sign_in.sh to get the cookies.
 # What the scripts do:
 
