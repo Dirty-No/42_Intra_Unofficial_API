@@ -1,6 +1,8 @@
 
 # An curl client for 42's intra
 
+Your intra must be in english for this to work.
+
 This client uses your cookies to make the requests to the intranet, so use at your own risk, you're the only person responsible for what you do with it.
 
 This client is not limited by any ratelimit of the intra's API as it simply scrapes it's way in.
